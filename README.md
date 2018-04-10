@@ -7,7 +7,7 @@ This README is current as of commit [e10e8e6](https://github.com/ctsrc/xmr-stak/
 ## Usage
 
 ```sh
-cd ~/src/bin/github.com/xmr-stak/build/
+cd ~/src/github.com/fireice-uk/xmr-stak/build/
 ./bin/xmr-stak --noAMD --noNVIDIA --currency monero7 \
   -o stratum+tcp://cryptonightv7.eu.nicehash.com:3363 \
   -u 3Qsz9ZbmxYojJcGxwm2KqG631yA38wt7gY -p x \
