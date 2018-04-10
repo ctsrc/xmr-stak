@@ -14,7 +14,7 @@ cd ~/src/github.com/fireice-uk/xmr-stak/build/
   --use-nicehash -i 8037
 ```
 
-## Building from source
+## Build from source
 
 ```bash
 mkdir -p ~/src/bin/github.com/fireice-uk
@@ -26,3 +26,20 @@ cd xmr-stak/build
 cmake ..
 make install
 ```
+
+## Enable large page support and increase ulimit -l.
+
+See https://github.com/xmrig/xmrig/issues/32 and
+https://github.com/fireice-uk/xmr-stak/blob/master/doc/FAQ.md#error-memory-alloc-failed-mmap-failed
+
+```bash
+echo vm.nr_hugepages=128 | sudo dd oflag=append conv=notrunc of=/etc/sysctl.conf
+sudo sysctl -p
+
+sudo dd oflag=append conv=notrunc of=/etc/security/limits.conf <<EOF
+* soft memlock 262144
+* hard memlock 262144
+EOF
+```
+
+Log out and then log back in for the ulimit take effect.
