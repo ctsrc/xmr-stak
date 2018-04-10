@@ -17,9 +17,9 @@ cd ~/src/github.com/fireice-uk/xmr-stak/build/
 ## Build from source
 
 ```bash
+sudo apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev
 mkdir -p ~/src/bin/github.com/fireice-uk
 cd !$
-sudo apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev
 git clone https://github.com/fireice-uk/xmr-stak.git
 mkdir xmr-stak/build
 cd xmr-stak/build
