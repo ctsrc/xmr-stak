@@ -1,4 +1,4 @@
-# xmr-stak -- Ubuntu 17.10 / AMD Ryzen 7 1700
+# xmr-stak – Ubuntu 17.10 / AMD Ryzen 7 1700
 
 Personalized README for CPU mining with [fireice-uk/xmr-stak](https://github.com/fireice-uk/xmr-stak) on my workstation.
 
