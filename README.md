@@ -27,7 +27,7 @@ cmake ..
 make install
 ```
 
-## Enable large page support and increase ulimit -l.
+## Enable large page support and increase ulimit -l
 
 See https://github.com/xmrig/xmrig/issues/32 and
 https://github.com/fireice-uk/xmr-stak/blob/master/doc/FAQ.md#error-memory-alloc-failed-mmap-failed
